@@ -23,3 +23,9 @@ test("Test case 5", async({page})=>
 {
 console.log("this is Testcase5")
 })
+test("Checking amazon title" ,async({page})=>
+{
+    await page.goto("https://www.snapdeal.com/");
+    const T= await page.title();
+    console.log("The snapdeal title is " +T);
+})
